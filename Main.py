@@ -202,10 +202,17 @@ async def show_cve(ctx):
     else:
         feed = feedparser.parse(RSS_URL)
         entries_by_id = {entry.id: entry for entry in feed.entries}
-        for cve_id in cves:
-            entry = entries_by_id.get(cve_id)
-            if entry:
-                await display_cve(entry, ctx)
+        today = datetime.today().strftime("%Y-%m-%d")
+
+        cves_today = {cve_id: date for cve_id, date in cves.items() if date == today}
+
+        if not cves_today:
+            await ctx.send("Aucune CVE pour aujourd'hui.")
+        else:
+            for cve_id in cves_today:
+                entry = entries_by_id.get(cve_id)
+                if entry:
+                    await display_cve(entry, ctx)
                 
 @check_cve.before_loop
 async def before_check_cve():
