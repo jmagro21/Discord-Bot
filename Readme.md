@@ -6,10 +6,10 @@ Vous devez installer Python et ensuite faire un :
 
         pip install requirements.txt 
 
-Ou 
+Ou
 
         Python -m pip install requirements.txt
-
+        
 Une fois que cela est fait, créez votre bot discord : 
 - Remplacez la ligne token par votre token
 
