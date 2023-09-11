@@ -11,9 +11,9 @@ Ou
         python.exe -m pip install requirements.txt
         
 Une fois que cela est fait, créez votre bot discord : 
-- Remplacez la ligne token par votre token dans tokencrp.py
-- Executez ce code seul. Cela va vous créer deux fichier. L'un est votre token chiffré, l'autre est la clé de déchiffrement
+- Remplacer la ligne token par votre token dans tokencrp.py
+- Executer ce code seul. Cela va vous créer deux fichiers. L'un est votre token chiffré, l'autre est la clé de déchiffrement
 
 Invitez le sur votre serveur discord :
-- Remplacez les ids des channels par les votres (ceux sur votre serveur discord).
-- Donnez lui les bons droits pour qu'il puisse envoyé des messages sur vos channels discord.
+- Remplacer les ids des channels par les votres (ceux sur votre serveur discord).
+- Donner lui les bons droits pour qu'il puisse envoyer des messages sur vos channels discord.
